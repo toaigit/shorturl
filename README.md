@@ -1,2 +1,2 @@
 # shorturl
-Build your vanity URL server
+* Build your vanity URL server
