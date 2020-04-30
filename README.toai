@@ -1,0 +1,3 @@
+docker pull httpd:2.4.43
+httpd.conf - need to include vhosts file
+httpd-vhosts.conf - need to add mod_rewrite
