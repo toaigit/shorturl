@@ -1,0 +1,4 @@
+google https://www.google.com
+stanford https://www.stanford.edu
+yahoosport https://sports.yahoo.com
+covid https://www.cdc.gov/coronavirus/2019-ncov/index.html

@@ -1,5 +1,3 @@
-googledocs https://docs.google.com/spreadsheets/d/1oNgDHPGqbc4SII7ZAQ02Ve3cMfJPFGSu1h8juijDbnc
-shorturl https://opensource.com/article/18/7/apache-url-shortener
-california https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx#COVID-19%20by%20the%20Numbers
-covid https://www.cdc.gov/coronavirus/2019-ncov/index.html
-training/sso https://saml.stanford.edu
+google https://www.google.com
+nfl https://sports.yahoo.com/nfl
+saml https://saml.stanford.edu

@@ -1,3 +1,33 @@
 docker pull httpd:2.4.43
 httpd.conf - need to include vhosts file
 httpd-vhosts.conf - need to add mod_rewrite
+httpd-compose.yml.container - files are on the container itselft
+httpd-compose.yml.disk - override with files on disk
+
+startup - startup the container
+   NOTE - you can use one of the yml files to test your understanding.
+          yml.container --> httpd-compose.yml to test the files are in the container.
+          yml.disk --> httpd-compose.yml to test the files are on your local disk.
+shutdown - shutdown the container
+
+NOTE:  SSL enable
+Enable LoadModule module_ssl
+Generate a self-sign certificate using gen-selfsign.sh
+Copy the cert files to the certs directory
+Enable SSL, you need to do the following:
+   - uncomment the lines in the httpd.conf file
+        #LoadModule ssl_module modules/mod_ssl.so
+        #Include conf/extra/httpd-ssl.conf
+   - COPY ./files/httpd-ssl.conf /usr/local/apache2/conf/extra/httpd-ssl.conf
+   - COPY ./certs:/usr/local/apache2/conf/
+   - Map the certificates file in the docker-compose.yml file (optional)
+
+DOCKER COMMANDS
+  docker ps
+  docker image ls
+  docker logs <container>
+  docker image prune
+  docker network ls
+  docker network create <networkname>
+  docker network inspect <networkname>
+  docker network remove <networkname>
